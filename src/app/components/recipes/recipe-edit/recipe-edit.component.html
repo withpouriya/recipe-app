@@ -1,22 +1,21 @@
-<form class="row g-3">
+<form class="row" [formGroup]="recipeForm" (ngSubmit)="onSubmit()">
   <div class="col-12">
     <label for="name" class="form-label">Name</label>
-    <input type="text" class="form-control" id="name">
+    <input type="text" class="form-control"  id="name" formControlName="name">
   </div>
   <div class="col-12">
     <label for="image-url" class="form-label">Image URL</label>
-    <input type="url" class="form-control" id="image-url">
+    <input type="url" class="form-control" id="image-url" formControlName="imagePath">
   </div>
   <div class="col-12">
     <label for="description" class="form-label">Description</label>
-    <textarea class="form-control" id="description" rows="3"></textarea>
+    <textarea class="form-control" id="description" rows="3" formControlName="description"></textarea>
   </div>
   <div class="col-12">
     <button type="submit" class="btn btn-success me-2">Save</button>
     <button type="submit" class="btn btn-danger">Cancel</button>
   </div>
   <h3>Ingredients</h3>
-  <hr>
   <div class="d-flex">
     <input type="text" class="form-control">
     <input type="number" class="form-control mx-3">
