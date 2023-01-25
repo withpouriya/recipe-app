@@ -1,1 +1,29 @@
-<p>recipe-edit works!</p>
+<form class="row g-3">
+  <div class="col-12">
+    <label for="name" class="form-label">Name</label>
+    <input type="text" class="form-control" id="name">
+  </div>
+  <div class="col-12">
+    <label for="image-url" class="form-label">Image URL</label>
+    <input type="url" class="form-control" id="image-url">
+  </div>
+  <div class="col-12">
+    <label for="description" class="form-label">Description</label>
+    <textarea class="form-control" id="description" rows="3"></textarea>
+  </div>
+  <div class="col-12">
+    <button type="submit" class="btn btn-success me-2">Save</button>
+    <button type="submit" class="btn btn-danger">Cancel</button>
+  </div>
+  <h3>Ingredients</h3>
+  <hr>
+  <div class="d-flex">
+    <input type="text" class="form-control">
+    <input type="number" class="form-control mx-3">
+    <button class="btn btn-danger d-flex justify-content-center align-items-center">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg d-block" viewBox="0 0 16 16">
+        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+      </svg>
+    </button>
+  </div>
+</form>
